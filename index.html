@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="cn-zh">
+<head>
+	<meta charset="UTF-8">
+	<title>重庆东大肛肠医院</title>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="renderer" content="webkit">
+	 <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script>
+    resizeW();
+    function resizeW(){
+    	var html=document.getElementsByTagName('html')[0];
+    	var htmlW=html.clientWidth;
+		html.style.fontSize=htmlW/16+'px';
+    }
+    window.addEventListener('resize',resizeW)	
+    </script>
+	<script src="https://unpkg.com/vue@2.3.4/dist/vue.js"></script>
+</head>
+<body>
+	<header>
+		<ul class="banner" onclick="openZoosUrl();LR_HideInvite();;return false;" href="javascript:void(0)">
+			<li><img src="images/ban_01.jpg" alt=""></li>
+			<li><img src="images/ban_02.jpg" alt=""></li>
+			<li><img src="images/ban_03.jpg" alt=""></li>
+			<li><img src="images/ban_04.jpg" alt=""></li>
+			<li><img src="images/ban_05.jpg" alt=""></li>
+			<li><img src="images/ban_06.jpg" alt=""></li>
+		</ul>
+	</header>
+	<article id="app">
+		<sec01></sec01>
+		<sec02></sec02>
+		<sec03></sec03>
+		<sec04></sec04>
+		<sec05></sec05>
+		<sec06></sec06>
+	</article>
+	<!-- vue组件 start-->
+	<template id="sec01">
+		<div class="sec01">
+			<div class="left"><img src="images/sec01_1.jpg" alt=""></div>
+			<div class="right">如果您上厕所时，突然发现自己大便出血，很可能内心慌乱。重庆东大肛肠医院肛肠医生认为，从医学的角度上来看，大便出血是一种非常有效的疾病预报和发现方式。</div>
+		</div>
+	</template>
+	<template id="sec02">
+		<section class="sec02">
+			<title1 :titlefun="titleText"></title1>
+			<div class="sec02_middle">
+				<dl class="sec02_dl">
+					<dd><img src="images/sec02_01.jpg" alt=""></dd>
+					<dt>
+						<h3>18岁以内患者</h3>
+						<p>痔疮、肛裂、肛门息肉的几率比较大（<span>知识点：肛裂易因排便反复摩擦出血，引起肛门肛管溃疡、肛窦炎等疾病</span>）</p>
+					</dt>
+				</dl>
+				<dl class="sec02_dl sec02_dl2">
+					<dt>
+						<h3>18-40之间</h3>
+						<p>痔疮、肛裂、肛瘘、结肠炎、胃出血、十二指肠溃疡出血、胃病、直肠病、肛管病，除了以上几种外还可以能为结直肠息肉、溃疡性结肠炎、直肠恶变。</p>
+					</dt>
+					<dd><img src="images/sec02_02.jpg" alt=""></dd>
+				</dl>
+				<dl class="sec02_dl">
+					<dd><img src="images/sec02_03.jpg" alt=""></dd>
+					<dt>
+						<h3>40岁以上</h3>
+						<p>这个年龄已经进入直肠肿瘤高发期，结直肠肿瘤的早期症状就是便血、而且鲜红色的。</p>
+					</dt>
+				</dl>
+			</div>
+			<zx :zixun="zixunText"></zx>
+			<div class="ys">
+				<dl>
+					<dt><img src="images/sec02_ys.jpg" alt=""></dt>
+					<dd>早期便血，一般通过药物就可以治疗，但不建议使用药店的药物，因为药店的药物都是OTC药物，这类外用药缺乏针对性，且含有激素成分，长时间会引起内分泌失调，长”痘痘“。</dd>
+					<span class="tx">温馨提醒</span>
+				</dl>
+			</div>
+		</section>
+	</template>
+	<template id="sec03">
+		<section class="sec03"> 
+			<title1 :titlefun="titleText"></title1>
+			<div class="sec03_main">
+				<p class="sec03_img"><img src="images/sec03_01.jpg" alt=""></p>
+				<div class="sec03_list">
+					<dl class="sec03_dl">
+						<dt>按便血的颜色分类</dt>
+						<dd><span>鲜红色</span><span>暗红色</span><span>黑色</span><Br/><span>果酱色</span><span>其他颜色</span></dd>
+						<a href="" class="sec03_dl_zx">&gt;&gt;&gt;你是哪一种颜色？</a>
+					</dl>
+					<dl class="sec03_dl">
+						<dt>按血量的多少分类</dt>
+						<dd><span>只是纸上有血</span><span>少量附着大便表面</span><span>少量滴血</span><Br/><span>大量喷血</span><span>脓血混合大便</span></dd>
+						<a href="" class="sec03_dl_zx">&gt;&gt;&gt;你属于哪种情况？</a>
+					</dl>
+					<dl class="sec03_dl">
+						<dt>便血时是否疼痛</dt>
+						<dd><span>无痛便血</span><span>伴有疼痛感便血</span></dd>
+						<a href="" class="sec03_dl_zx">&gt;&gt;&gt;你是什么感觉？</a>
+					</dl>
+					<dl class="sec03_dl">
+						<dt>便血次数多少</dt>
+						<dd><span>初次便血</span><span>多次便血</span></dd>
+						<a href="" class="sec03_dl_zx">&gt;&gt;&gt;你便血多少次了？</a>
+					</dl>
+				</div>
+				<div class="sec03_zx">
+					<div class="sec03_zx_main">
+						<h3>对照自身具体情况</h3>
+						<div class="sec03_zx_but"><p>联系在线医生</p><p>为你初步诊断病情</p></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+	<template id="sec04">
+		<section class="sec04">
+			<title1 :titlefun="titleText"></title1>
+			<div class="sec04_main">
+				<p class="sec04_img"><img src="images/sec04_01.jpg" alt=""></p>
+				<p class="sec04_p2"><a href="">名额有限，抓紧时间吧！</a></p>
+				<p class="sec04_p3">立即预约<span>58</span>元便血检查</p>
+			</div>
+		</section>
+	</template>
+	<template id="sec05">
+		<section class="sec05">
+			<title1 :titlefun="titleText"></title1>
+			<div class="sec05_main">
+				<div class="sec05_ys">
+					<div class="sec05_ys_position" :class="positionshow">
+						<div class="sec05_ys_nv">
+							<div class="left"><img src="images/sec05_01.jpg" alt=""></div>
+							<div class="right">
+								<p class="top">曲音琼<Br/><span>女子诊疗室主任</span></p>
+								<p class="bottom">
+								擅长运用多种微创技术，对痔疮、肛裂、直肠肿瘤、结直肠息肉等肛肠外科引起的便血进行治疗有丰富的临床经验... <a href="">【详细】</a></p>
+							</div>
+						</div>
+						<div class="sec05_ys_nan">
+							<div class="left"><img src="images/sec05_02.jpg" alt=""></div>
+							<div class="right">
+								<p class="top">许德贵<Br/><span>东大主任医师</span></p>
+								<p class="bottom">擅长大肠内窥镜内痔切闭合术和PPH吻合术，环状嵌顿痔、溃疡性肛裂、直肠肿瘤、脓性肛瘘等疑难重症... <a href="">【详细】</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sec05_ys_but">
+					<button class="active" @click="move('nv',$event)">推荐女医生</button>
+					<button @click="move('nan',$event)" class="">推荐男医生</button>
+				</div>
+			</div>
+			<zx :zixun='zixunText'></zx>
+		</section>
+	</template>
+	<template id="sec06">
+		<section class="sec06">
+			<title2></title2>
+			<div class="sec06_main">
+				<div class="sec06_top">
+					<p>30岁的小王有痔疮史数年，最近便血一月余。行走心慌，站立头晕，严重影响日常工作和生活。下图血常规检验报告，小王显示红细胞和血红蛋白均低于正常值，左下，心电图，已经异常，心跳102，心动过速。右下，痔疮触碰当即出血。贫血，严重贫血。</p>
+				</div>
+				<div class="sec06_img">
+					<img src="images/sec06_02.jpg" alt="">
+					<img src="images/sec06_03.jpg" alt="">
+					<div class="sec06_hy">
+						<div class="left">在此呼吁</div>
+						<div class="right">一副药能解决的问题，千万不要拖到必须用手术解决。</div>
+					</div>
+				</div>
+			</div>
+			<zx :zixun="zixunText"></zx>
+		</section>
+	</template>
+	<template id="zixun">
+		<div class="zixun">
+			<div class="zixun_main">
+				<div class="zixin_con">
+					<a href="#" class="left_swt"></a>
+					<a href="#" class="right_tel"></a>
+				</div>
+				<h3 class="zixun_title" v-html="zixun"></h3>
+			</div>
+		</div>
+	</template>
+	<template id="title1">
+		<div class="title1">
+			<h2 v-html="titlefun"></h2>
+		</div>
+	</template>
+	<template id="title2">
+		<div class="title">
+			<span class="title_left"></span>
+			<span class="title_center">东大肛肠医院真人真事</span>
+			<span class="title_right"></span>
+		</div>
+	</template>
+	<!-- vue组件 end-->
+
+	<script type="text/javascript" language='javascript'>
+		Vue.component('zx',{
+			template:"#zixun",
+			props:['zixun']
+		});
+		Vue.component('title2',{
+			template:'#title2'
+		});
+		Vue.component('title1',{
+			template:'#title1',
+			props:['titlefun'],
+		})
+		var app=new Vue({
+			components:{
+				'sec01':{
+					template:'#sec01'
+				},
+				'sec02':{
+					template:'#sec02',
+					data(){
+						return{
+							titleText:'年龄不同，便血病因不同',
+							zixunText:'我可能是哪种疾病'
+						}
+					}
+				},
+				'sec03':{
+					template:'#sec03',
+					data(){
+						return {
+							titleText:'根据血色，血量、及便血时<br/>伴随症状判断病情'
+						}
+					}
+				},
+				'sec04':{
+					template:'#sec04',
+					data(){
+						return {
+							titleText:'便血病种相似，需专业检查确诊'
+						}
+					}
+				},
+				'sec05':{
+					template:'#sec05',
+					data(){
+						return {
+							titleText:'东大临床经验丰富的名医坐诊',
+							zixunText:'了解更多医师详情',
+							active:'active',
+							positionshow:'move0'
+						}
+					},
+					methods:{
+						move(sex,ev){
+							var sec05_ys_but=document.querySelector('.sec05_ys_but').getElementsByTagName('button');
+							for(var i=0;i<sec05_ys_but.length;i++){
+								sec05_ys_but[i].setAttribute('class','')
+							}
+							ev.target.setAttribute('class',this.active);
+							if(sex=='nv'){
+								this.positionshow="move0";
+							}else if(sex=='nan'){
+								this.positionshow="move100";
+							}
+						}	
+					}
+				},
+				'sec06':{
+					template:'#sec06',
+					data(){
+						return {
+							zixunText:'我想了解我目前的病情严重吗？'
+						}
+					}
+				}
+			}
+		}).$mount('#app')
+	</script>
+</body>
+</html>
